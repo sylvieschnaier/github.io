@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sylvie Schnaier Consulting | Marketing & Media Transformation</title>
+  <meta name="description" content="I help CMOs and marketing leaders reimagine media, content, and tech to drive growth-fast. Marketing & media transformation, in-house capability building, and omnichannel GTM." />
+  <meta name="robots" content="index,follow" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sylvie Schnaier Consulting" />
+  <meta property="og:description" content="Transforming marketing and media for the future of growth." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sylvieschnaier.github.io" />
+  <!-- Replace with your hosted image if you have one -->
+  <meta property="og:image" content="" />
+
+  <!-- Favicon (optional). Replace href with your icon path when you have one. -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>✨</text></svg>">
+
+  <style>
+    :root {
+      --bg: #0b0e14;
+      --card: #121826;
+      --muted: #99a3b3;
+      --text: #eef2f7;
+      --accent: #8b5cf6; /* violet */
+      --accent-2: #22c55e; /* green */
+      --maxw: 1120px;
+      --radius: 18px;
+      --shadow: 0 8px 30px rgba(0,0,0,0.25);
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--text);
+      background: radial-gradient(1200px 700px at 10% -10%, rgba(139,92,246,0.15), transparent 60%),
+                  radial-gradient(1000px 500px at 90% 0%, rgba(34,197,94,0.10), transparent 55%),
+                  var(--bg);
+      line-height: 1.55;
+      scroll-behavior: smooth;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .container { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 20px; }
+
+    header {
+      position: sticky; top: 0; backdrop-filter: blur(8px);
+      background: rgba(11,14,20,0.6); border-bottom: 1px solid rgba(255,255,255,0.06);
+      z-index: 50;
+    }
+    .nav { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; }
+    .brand { font-weight: 800; letter-spacing: 0.3px; font-size: clamp(18px, 2.5vw, 22px); }
+    .nav a.btn { margin-left: 12px; }
+
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 16px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.16); background: rgba(255,255,255,0.06); color: var(--text); text-decoration: none; transition: transform .06s ease, background .2s ease; }
+    .btn:hover { transform: translateY(-1px); background: rgba(255,255,255,0.10); }
+    .btn.primary { background: linear-gradient(135deg, var(--accent), #6d28d9); border-color: transparent; }
+    .btn.primary:hover { filter: brightness(1.05); }
+
+    .hero { padding: 96px 0 56px; }
+    .hero-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 36px; align-items: center; }
+    .eyebrow { color: var(--muted); text-transform: uppercase; font-weight: 700; letter-spacing: 1.2px; font-size: 13px; }
+    h1 { margin: 10px 0 12px; font-size: clamp(28px, 5vw, 46px); line-height: 1.12; }
+    .lead { font-size: clamp(16px, 2.6vw, 19px); color: #cfd7e6; }
+    .actions { margin-top: 22px; display: flex; gap: 12px; flex-wrap: wrap; }
+
+    .statbar { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 26px; }
+    .stat { background: var(--card); border-radius: var(--radius); padding: 16px; border: 1px solid rgba(255,255,255,0.06); box-shadow: var(--shadow); }
+    .stat .k { font-weight: 800; font-size: clamp(18px, 3vw, 22px); }
+    .stat .t { color: var(--muted); font-size: 13px; }
+
+    .section { padding: 64px 0; }
+    .section h2 { font-size: clamp(22px, 4vw, 30px); margin: 0 0 8px; }
+    .section p.sub { color: #cfd7e6; margin: 0 0 24px; }
+
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .card { background: var(--card); border: 1px solid rgba(255,255,255,0.06); border-radius: var(--radius); padding: 22px; box-shadow: var(--shadow); display: flex; flex-direction: column; }
+    .card h3 { margin: 0 0 6px; font-size: 20px; }
+    .pill { display: inline-block; font-size: 12px; color: #d6e1f5; background: rgba(139,92,246,0.15); border: 1px solid rgba(139,92,246,0.35); padding: 4px 8px; border-radius: 999px; }
+    .card ul { margin: 12px 0 16px; padding-left: 18px; }
+    .card li { margin: 6px 0; color: #d6e1f5; }
+    .card .cta { margin-top: auto; }
+
+    .about { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+    .about .box { background: var(--card); border: 1px solid rgba(255,255,255,0.06); border-radius: var(--radius); padding: 22px; box-shadow: var(--shadow); }
+    .about ul { margin: 10px 0 0; padding-left: 18px; }
+    .about li { margin: 8px 0; color: #d6e1f5; }
+
+    blockquote { margin: 0; padding: 22px; border-left: 4px solid var(--accent); background: rgba(255,255,255,0.04); border-radius: 0 var(--radius) var(--radius) 0; color: #e7ecf6; }
+
+    .cta-band { background: linear-gradient(135deg, rgba(139,92,246,0.16), rgba(34,197,94,0.12)); border-top: 1px solid rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.06); }
+    .cta-band .wrap { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 18px; align-items: center; }
+
+    footer { color: var(--muted); padding: 28px 0 48px; font-size: 14px; }
+
+    @media (max-width: 980px) {
+      .hero-grid, .about, .cards, .cta-band .wrap { grid-template-columns: 1fr; }
+      .statbar { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 600px) {
+      .statbar { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav" role="navigation" aria-label="Main">
+      <div class="brand">Sylvie Schnaier Consulting</div>
+      <nav>
+        <a class="btn" href="#services">Services</a>
+        <a class="btn" href="#about">About</a>
+        <a class="btn primary" href="https://calendly.com/sylvieschnaier" target="_blank" rel="noopener">Book a Strategy Call</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">Marketing & Media Transformation</div>
+          <h1>I help CMOs and marketing leaders reimagine media, content, and tech to drive growth-fast.</h1>
+          <p class="lead">25+ years across agency (Omnicom, IPG) and in-house leadership at Johnson & Johnson including Brands such as: Neutrogena, Listerine, Aveeno, etc. I build in-house capabilities, streamline tech stacks, and connect brand storytelling with performance to deliver measurable results.</p>
+          <div class="actions">
+            <a class="btn primary" href="https://calendly.com/sylvieschnaier" target="_blank" rel="noopener">Book a Strategy Call</a>
+            <a class="btn" href="#services">See Services</a>
+          </div>
+          <div class="statbar" aria-label="Credibility stats">
+            <div class="stat"><div class="k">$100MM+</div><div class="t">Brand portfolio managed</div></div>
+            <div class="stat"><div class="k">120 → 50</div><div class="t">Platforms rationalized</div></div>
+            <div class="stat"><div class="k">Capability Building</div><div class="t">Custom internal training programs, new ways of working, standardized approaches</div></div>
+          </div>
+          <div class="statbar" aria-label="Additional stats">
+            <div class="stat"><div class="k">Global</div><div class="t">Integrated agency rollout</div></div>
+          </div>
+        </div>
+        <div>
+          <div class="card" aria-label="What I do">
+            <span class="pill">What I Do</span>
+            <h3 style="margin-top:10px">Transform marketing into a modern, measurable growth engine.</h3>
+            <ul>
+              <li>Media & marketing operating model redesign</li>
+              <li>In-house content & media capability building</li>
+              <li>Omnichannel go-to-market strategy</li>
+              <li>Tech stack simplification & AI integration</li>
+            </ul>
+            <a class="btn cta" href="#contact">Get in Touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <h2>How We Can Work Together</h2>
+        <p class="sub">Choose a path that fits your urgency-from quick clarity to full transformation to ongoing senior guidance.</p>
+        <div class="cards" role="list">
+          <article class="card" role="listitem">
+            <span class="pill">4–6 Weeks</span>
+            <h3>Quick Win Audit</h3>
+            <p>Immediate clarity on what to fix first.</p>
+            <ul>
+              <li>Marketing & Media Health Check</li>
+              <li>Tech Stack Streamline</li>
+              <li>3–5 Quick-Win Recommendations</li>
+            </ul>
+            <a class="btn cta" href="mailto:sylvieschnaier@gmail.com?subject=Quick%20Win%20Audit%20Inquiry">Book Your Audit</a>
+          </article>
+
+          <article class="card" role="listitem">
+            <span class="pill">3–6 Months</span>
+            <h3>Transformation Blueprint</h3>
+            <p>Architect and launch a future-ready operation.</p>
+            <ul>
+              <li>Org & Capability Design</li>
+              <li>Omnichannel GTM Plan</li>
+              <li>Change Management Roadmap</li>
+              <li>KPI & Measurement Framework</li>
+            </ul>
+            <a class="btn cta" href="mailto:sylvieschnaier@gmail.com?subject=Transformation%20Blueprint%20Inquiry">Build My Blueprint</a>
+          </article>
+
+          <article class="card" role="listitem">
+            <span class="pill">Ongoing</span>
+            <h3>Executive Growth Partner</h3>
+            <p>Your senior advisor for navigating change.</p>
+            <ul>
+              <li>Monthly Strategy Sessions</li>
+              <li>On-Call Advisory</li>
+              <li>Quarterly Innovation Workshops</li>
+            </ul>
+            <a class="btn cta" href="mailto:sylvieschnaier@gmail.com?subject=Executive%20Growth%20Partner%20Inquiry">Partner with Me</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container about">
+        <div class="box">
+          <h2>Your Trusted Transformation Partner</h2>
+          <p class="sub">I've led digital transformation across global organizations-bridging brand, media, and technology to deliver growth with accountability.</p>
+          <ul>
+            <li>Managed a $100MM portfolio across multiple markets</li>
+            <li>Reduced 120+ platforms to 50, saving cost and complexity</li>
+            <li>Built in-house creative & content teams from the ground up</li>
+            <li>Launched omnichannel GTM strategies that connect brand & performance</li>
+            <li>Led the global rollout of an integrated agency model</li>
+          </ul>
+        </div>
+        <div class="box">
+          <h3 style="margin-top:0">What Leaders Say</h3>
+          <blockquote>
+            "Sylvie transformed our marketing operations from fragmented to integrated-giving us speed, clarity, and measurable ROI."<br>
+            <span style="color:var(--muted); font-size:14px">- CMO, Global Consumer Brand</span>
+          </blockquote>
+          <p style="margin-top:14px">Want more references? <a href="mailto:sylvieschnaier@gmail.com?subject=Request%20for%20references">Request them here</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section cta-band">
+      <div class="container wrap">
+        <div>
+          <h2>Ready to Transform Your Marketing?</h2>
+          <p class="sub">Whether you need a quick health check, a full transformation plan, or an ongoing advisor-I'll help you make change stick.</p>
+        </div>
+        <div class="actions">
+          <a class="btn primary" href="https://calendly.com/sylvieschnaier" target="_blank" rel="noopener">Book a Free Intro Call</a>
+          <a class="btn" href="mailto:sylvieschnaier@gmail.com">Email Me</a>
+          <a class="btn" href="https://www.linkedin.com/in/sylvie-schnaier/" target="_blank" rel="noopener">Connect on LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div>Sylvie Schnaier Consulting • New York, NY</div>
+      <div style="margin-top:6px">Contact: <a href="mailto:sylvieschnaier@gmail.com">sylvieschnaier@gmail.com</a> · <a href="https://www.linkedin.com/in/sylvie-schnaier/" target="_blank" rel="noopener">LinkedIn</a></div>
+      <div style="margin-top:6px">© <span id="year"></span> Sylvie Schnaier. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    // Set current year in footer automatically
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Sylvie Schnaier Consulting",
+    "url": "https://sylvieschnaier.github.io",
+    "logo": "",
+    "sameAs": [
+      "https://www.linkedin.com/in/sylvie-schnaier/"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "Business",
+      "email": "sylvieschnaier@gmail.com"
+    }
+  }
+  </script>
+</body>
+</html>
